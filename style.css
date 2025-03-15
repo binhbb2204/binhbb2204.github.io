@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #009cff;
+    --secondary-color: #009cff;
+    --heading-color: #0b2727;
+    --text-color: #6e7074;
+    --font-name: "Montserrat", sans-serif;
+    --subtitle-font-name: "Island Moments", cursive;
+    --subtitle-font-name2: "Lobster", cursive;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--font-name);
+}
+
+a{
+    text-decoration: none;
+    color: unset;
+}
+
+a:hover{
+    color: #0072ff;
+}
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--heading-color);
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+.primary_btn{
+    background: var(--secondary-color) !important;
+    border: none !important;
+    border-radius: 25px !important;
+    padding: 12px 30px !important;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.primary_btn a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #fff;
+}
+
+.primary_btn a:hover{
+    color: inherit;
+}
+
+.secondary_btn{
+    background: transparent !important;
+    color: #0b2727 !important;
+    border: none !important;
+    font-weight: 500 !important;
+}
+
+.secondary_btn a{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: var(--heading-color);
+}
+
+.secondary_btn a:hover{
+    color: inherit;
+}

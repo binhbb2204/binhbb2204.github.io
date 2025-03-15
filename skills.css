@@ -1,0 +1,86 @@
+section{
+    padding: 10px 0;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;  
+    
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 30px;
+    
+}
+
+.title{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 38px;
+    position: relative;
+}
+
+.card{
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.icon{
+    font-size: 40px;
+}
+
+li{
+    padding: 12px 0;
+    border-bottom: 1px solid #e2e8f0;
+    display: flex;
+    font-size: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.level{
+    display: flex;
+    align-items: center;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0 3px;
+    position: relative;
+    background-color: #e2e8f0;
+    overflow: hidden;
+}
+
+.dot-inner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #2563eb;
+}
+
+.dot.half .dot-inner{
+    width: 50%;
+    border-radius: 0;
+}
+
+.dot.full .dot-inner{
+    width: 100%;
+    border-radius: 50%;
+}
