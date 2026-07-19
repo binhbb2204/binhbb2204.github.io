@@ -345,16 +345,18 @@
                 </div>
                 
                 <div class="contact-form-card">
-                    <form id="contactForm" onsubmit="sendEmail(event)">
+                    <form action="https://formsubmit.co/binhbb2204@gmail.com" method="POST">
                         <div class="form-group">
-                            <input type="text" id="senderName" placeholder="Your Name" required>
+                            <input type="text" name="name" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="senderEmail" placeholder="Your Email" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="senderMessage" rows="5" placeholder="Your Message" required></textarea>
+                            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
                         </div>
+                        <input type="hidden" name="_subject" value="New message from your Portfolio!">
+                        <input type="hidden" name="_captcha" value="false">
                         <button type="submit" class="btn primary-btn submit-btn">Send Message</button>
                     </form>
                 </div>
@@ -445,20 +447,6 @@
                 header.classList.remove('scrolled');
             }
         });
-
-        // Contact Form Handler
-        function sendEmail(e) {
-            e.preventDefault();
-            const name = document.getElementById('senderName').value;
-            const email = document.getElementById('senderEmail').value;
-            const message = document.getElementById('senderMessage').value;
-            
-            const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
-            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
-            
-            // Open the user's default email client
-            window.location.href = `mailto:binhbb2204@gmail.com?subject=${subject}&body=${body}`;
-        }
     </script>
 </body>
 </html>
