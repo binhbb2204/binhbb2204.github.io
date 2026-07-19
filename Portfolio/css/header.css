@@ -4,11 +4,13 @@ body {
     overflow: hidden;
 }
 header {
-    background-color: var(--dark-color);
+    background: var(--primary-gradient);
     width: 100%;
     height: auto;
     line-height: 80px;
-    background-image: linear-gradient(to left,#4d9eee, #59a6ee);
+    box-shadow: var(--shadow-sm);
+    position: relative;
+    z-index: 50;
 }
 
 nav{
@@ -22,17 +24,16 @@ nav{
 
 .logo{
     color: white;
-    font-weight: 700;
-    font-size: 1.3rem;
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: -0.5px;
 }
 
 .text-gradient{
-    padding: relative;
-    color: transparent;
-    background-clip: text;
+    position: relative;
+    color: white;
     z-index: 10;
-    font-size: 1.5rem;
-    background-image: linear-gradient(to right, #0066ff, #0033cc);
+    font-weight: 800;
 }
 .menu{
     margin-bottom: 0;
@@ -44,25 +45,26 @@ nav{
 }
 .nav__item a{
     text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    font-size: 1.05rem;
     position: relative;
-    
+    transition: color 0.3s ease;
 }
 
 .nav__item a:hover {
-    color: #007bff;
+    color: #ffffff;
 }
 
 .nav__item a::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
-    bottom: -4px;
+    height: 3px;
+    bottom: -6px;
     left: 0;
-    background-color: #007bff;
+    background-color: #ffffff;
+    border-radius: 2px;
     transition: width 0.3s ease;
 }
 

@@ -4,11 +4,10 @@ body{
 }
 
 footer{
-    background-color: var(--dark-color);
-    background-image: linear-gradient(to left,#4d9eee, #59a6ee);
-    border-top: 1px solid #e9ecef;
-    padding: 3rem 0;
+    background: var(--primary-gradient);
+    padding: 4rem 0 2rem;
     color: white;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
 }
 
 .footer-content{
@@ -22,13 +21,14 @@ footer{
     justify-content: space-between;
     align-items: center;
     text-align: left;
+    gap: 2rem;
 }
 
 .footer-logo{
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     margin-bottom: 0;
-    letter-spacing: 1px;
+    letter-spacing: -0.5px;
 }
 
 .footer-nav{
@@ -41,15 +41,15 @@ footer{
 }
 
 .nav__item a{
-    color: #495057;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     transition: color 0.3s ease;
     position: relative;
 }
 
 .nav__item a:hover {
-    color: #007bff;
+    color: #ffffff;
 }
 
 .nav__item a::after {
@@ -59,7 +59,8 @@ footer{
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: #007bff;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
 }
 
 .nav__item a:hover::after {
@@ -83,6 +84,8 @@ footer{
 
 .footer-copyright {
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3rem;
     text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
 }
